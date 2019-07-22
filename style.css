@@ -1,0 +1,30 @@
+body {
+    font-family: Consolas;
+    text-align: center;
+}
+
+body:hover {
+    cursor: default;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.fade {
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.custborder {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: border .5s ease-in-out;
+    -moz-transition: border .5s ease-in-out;
+    -webkit-transition: border .5s ease-in-out;
+}
+
+.custborder:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+}

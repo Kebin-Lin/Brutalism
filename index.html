@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Info about the page -->
+        <title>Day Checker</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>How was your day today?</h1>
+            <br><br><br>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h4 class="custborder" id="good" onclick="showWrap(0)">Good.</h4>
+                    <p class="fade" style="opacity: 0;" id="goodtext">Good for you.</p>
+                </div>
+                <div class="col">
+                    <h4 class="custborder" id="ok" onclick="showWrap(1)">Ok.</h4>
+                    <p class="fade" style="opacity: 0;" id="oktext">That is ok.</p>
+                </div>
+                <div class="col">
+                    <h4 class="custborder" id="bad" onclick="showWrap(2)">Bad.</h4>
+                    <p class="fade" style="opacity: 0;" id="badtext">Quite bad.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <h2 class="fade" style="opacity: 0;" id="enjoy">Enjoy the rest of your day.</h2>
+            <h3 class="fade" style="opacity: 0;" id="goodbye">Goodbye.</h3>
+        </div>
+    </body>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</html>
