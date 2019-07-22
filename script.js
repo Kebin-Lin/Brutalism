@@ -12,6 +12,7 @@ var goodbye = document.getElementById('goodbye');
 var textLst = [goodtext, oktext, badtext, enjoy, goodbye];
 
 var clicked = false;
+var lastClicked = null;
 
 var showText = function(i) {
     textLst[i].style.opacity = 1;
@@ -28,7 +29,13 @@ var showWrap = function(i) {
     if (!clicked) {
         clicked = true;
         showText(i)
+    } else {
+        textLst[lastClicked].style.opacity = 0;
+        setTimeout(function() {
+            textLst[i].style.opacity = 1;
+        }, 1000);
     }
+    lastClicked = i;
 }
 
 textLst[4].addEventListener('click', function(e) {
